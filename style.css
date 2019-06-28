@@ -1,0 +1,116 @@
+*{
+   box-sizing:border-box; 
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    width:auto;
+    height:auto;
+    background-color:whitesmoke;
+    
+}
+
+/*grid*/
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows:80px 1500px 50px;
+    background-color:whitesmoke;
+    color:black;
+    width:100%;
+    min-height:100%;
+}
+.header{
+    grid-column:span 12;
+    display:flex;
+}
+.contact{
+    grid-column:span 2;
+    padding:20px;
+    height:100%;
+    margin-left:50px;
+}
+.main{
+    grid-column:span 10;
+    height:100%;
+    padding:50px;
+}
+.footer{
+    grid-column:span 12;
+    bottom:0;
+    width:100%;
+    height:50px;
+}
+
+/*header*/
+
+.logo{
+    height:50px; 
+    width:150px;
+    margin:25px 50px;  
+}
+.menu{
+    padding:20px;
+    font-weight:bolder;
+    margin-top:25px;
+}
+.menu:hover{
+    background-color:#dcdcdc;
+}
+
+/*body*/
+
+.contact-logo{
+    height:70px;
+    float:left;
+    margin-top:10px;
+    box-align:center;
+}
+.contact-logo:hover{
+    transform:scale(1.1,1.1);
+	transform-origin:0 0;
+}
+#about-content{
+    line-height:25px;
+    
+}
+h1{
+    padding:20px 0 20px 0;
+}
+h3{
+    color:	#00cccc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top:50px;
+}
+.motto{
+    text-align:center;
+    line-height:25px;
+    font-family:'Courier New', Courier, monospace;
+    padding:30px;
+    font-weight:bolder;
+}
+.skills-content{
+    padding-bottom:20px;
+}
+.contact-content ul{
+    list-style:none;
+    line-height:25px;
+}
+.contact-content ul img{
+    height:50px;
+}
+.contact-content ul img:hover{
+    transform:scale(1.1,1.1);
+    transform-origin:0 0;
+}
+
+
+
+
+/*footer*/
+
+p.copyright{
+    font-size: 10px;
+    text-align:center;
+    margin-top:15px;
+}
